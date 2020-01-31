@@ -1,0 +1,61 @@
+/* 1 */
+
+p {
+    color: rebeccapurple;
+}
+
+/* 2 */
+
+div > p{
+    text-shadow: darkblue;
+}
+
+/* 3 */
+
+h2 {
+    border: 1px;
+}
+
+/* 4 */
+
+p:first-child {
+    text-align: center;
+}
+
+/* 5 */
+
+.BOB * {
+    text-decoration-color: darkorange;
+}
+
+/* 6 */
+
+a [target] {
+    background-color: brown
+}
+
+/* 7 */
+
+h1, h2 {
+    background-color: aqua; 
+ }
+
+/* 8 */
+
+ body {
+    color: pink
+}
+
+/* 9 */
+
+a:hover {
+    background-color: yellow;
+}
+
+ /* 10 */
+
+#DA {
+    background-color: darksalmon;
+}
+
+

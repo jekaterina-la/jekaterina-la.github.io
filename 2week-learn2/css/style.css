@@ -1,0 +1,45 @@
+h2 {
+    color: blueviolet;
+    background: red;
+}
+
+h2.cool-h2 {
+    font-size: 12px;
+    background:burlywood;
+}
+
+h2.bold {
+    font-weight: 700;
+}
+
+h3.bold {
+    font-size: 400;;
+}
+
+#p-tag {
+    text-align: justify;
+}
+
+.cool-h2 div {
+    color: green;
+}
+
+.cool-h2 * {
+    background: ivory;
+}
+
+.class1, .class2 {
+
+}
+
+.cool-h2 > p {
+
+}
+
+.selected + div{
+
+}
+
+[src~=".png"] {
+
+}
