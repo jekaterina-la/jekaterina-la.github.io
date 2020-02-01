@@ -1,61 +1,76 @@
 /* 1 */
 
 p {
-    color: rebeccapurple;
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* 2 */
 
-div > p{
-    text-shadow: darkblue;
+h2 span {
+    background: darkblue;
 }
 
 /* 3 */
 
-h2 {
-    border: 1px;
+h2.head, h2.head2 {
+    border: 2px solid green;
 }
 
 /* 4 */
 
-p:first-child {
-    text-align: center;
+div > p {
+    text-align: right;
+    color: orangered
 }
 
 /* 5 */
 
-.BOB * {
-    text-decoration-color: darkorange;
+body * {
+    border-radius: 5px;
 }
 
 /* 6 */
 
-a [target] {
-    background-color: brown
+input[type="button"] {
+    cursor: pointer;
+    background-color: grey;
+    color: firebrick;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* 7 */
 
-h1, h2 {
+h1, ol {
     background-color: aqua; 
+    text-align: center;
+    color: rebeccapurple;
  }
 
 /* 8 */
 
- body {
-    color: pink
+ li:not(.task) {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 /* 9 */
 
 a:hover {
     background-color: yellow;
+    font-weight: bold;
+    cursor: pointer;
 }
 
  /* 10 */
 
-#DA {
-    background-color: darksalmon;
+p::first-letter {
+    background-color: palegreen;
+    color: palevioletred;
 }
 
 
