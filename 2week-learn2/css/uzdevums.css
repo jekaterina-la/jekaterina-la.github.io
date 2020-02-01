@@ -14,7 +14,7 @@ h2 span {
 
 /* 3 */
 
-h2.head, h2.head2 {
+h2.head.head2 {
     border: 2px solid green;
 }
 
