@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo:link, .logo:visited {
+    padding: 0px 200px;
+    display: block;
+}
+.option:link, .option:visited {
+    padding: 12px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.option:hover {
+    text-decoration: underline;
+    background-color: pink;
+}
+
+.nav-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0px 0px 0px;
+    background: thistle;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: black;
+}
+
+.menu {
+    margin-top: 10px;
+    margin-right: 200px;
+    position: relative;
+}
+
+.menu > span {
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu:hover ul{
+    display: flex;
+    flex-direction: column;
+    background: plum;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+
+ul {
+    display: none;
+}
+
+li {
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+.registration-form {
+    background-color: lightgray;
+    border: 1px solid lightslategray;
+    width: 20%;
+    padding: 50px;
+    margin: 0 0 40px 0;
+}

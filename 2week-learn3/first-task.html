@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <a class="logo" href="first-task.html">
+<img src="https://www.lifewire.com/thmb/CXML4SKjdbUaEqacJpc4kPeU8t0=/400x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-663932038-6a057cdc923147bf99f1cee4654a1032.jpg" width=60px alt="page logo">
+          </a>
+        <div class="menu"><span>MENU</span>
+            <ul>
+                <li><a class="option" href='#'>FIRST</a></li>
+                <li><a class="option" href='#'>SECOND</a></li>
+                <li><a class="option" href='http://google.com' target="blank">THIRD</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <form action="" method="get" class="registration-form">
+        <h1>Product registration</h1>
+        <div class="form-row">
+            <label for="product-name">Name</label>
+            <input type="product-name" name="product-name" type="text" placeholder="Dragon Touch K10 Tablet">
+        </div>
+        <div class="form-row">
+            <label for="product-category">Category</label>
+            <select name="product-category" id="product-category">
+                <option value disabled selected></option>
+                <option value="tablets">Tablets</option>
+                <option value="TV">TV</option>
+                <option value="Books">Books</option>
+                <option value="Phones">Phones</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="price">Price</label>
+            <input id="price" name="price" type="number" step="0.5" min="0.5" max="1000" placeholder="1">
+         </div>
+         <div class="form-row">
+            <label for="in-stock-amount">In Stock amount</label>
+            <input id="in-stock-amount" name="in-stock-amount" type="number" step="1" min="1" max="100" placeholder="1">
+         </div>
+         <div class="form-row">
+            <label for="description">Description</label>
+            <textarea id="description" name="description"></textarea>
+         </div>
+         <div class="form-row">
+            <label class='checkbox-label' for="can-be-sold">
+            <input id="can-be-sold"
+                   name="can-be-sold"
+                   type="checkbox"
+                   value="is-sold">
+            <span>Can be sold</span>
+            </label>
+          </div>
+          <div class="button-group">
+              <button>Submit</button>
+              <button>Clear</button>
+          </div>
+    </form>
+
+</body>
+</html>
