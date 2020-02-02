@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: green;
+    height: 600px;
+    flex-wrap: wrap;
+}
+
+.wrapper>div {
+    display: none;
+    width: 150px;
+    height: 150px;
+    background: red;
+}
+
+.wrapper > div:last-child {
+    background: hotpink;
+    height: 100px;
+}
+
+@media screen and (max-width: 720px) {
+    .wrapper {
+    flex-direction: column;
+    }
+}

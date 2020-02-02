@@ -1,0 +1,49 @@
+.images {
+    display: flex;
+    justify-content: space-between;
+    background: yellowgreen;
+    flex-wrap: wrap;
+}
+
+.images > div {
+    width: 100px;
+    height: 100px;
+    background: orange;
+}
+
+.different-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: palegreen;
+    height: 700px;
+}
+
+.different-images > div {
+    width: 100px;
+    height: 100px;
+    background: palevioletred;
+}
+
+.different-images > div:first-child {
+    background: rebeccapurple;
+}
+
+.different-images {
+    flex-direction: column-reverse;
+}
+
+.third-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: burlywood;
+    height: 500px;
+}
+
+.third-block > div {
+    width: 100px;
+    height: 100px;
+    background: cadetblue;
+}
