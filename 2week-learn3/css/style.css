@@ -72,3 +72,42 @@ li {
     padding: 50px;
     margin: 0 0 40px 0;
 }
+
+#popup {
+    z-index: 1;
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#box {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+}
+
+#popup:target {
+    display: block;
+}
+
+.close {
+    float: right;
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
