@@ -26,7 +26,7 @@
         <h1>Product registration</h1>
         <div class="form-row">
             <label for="product-name">Name</label>
-            <input type="product-name" name="product-name" type="text" placeholder="Dragon Touch K10 Tablet">
+            <input id="product-name" name="product-name" type="text" placeholder="Dragon Touch K10 Tablet">
         </div>
         <div class="form-row">
             <label for="product-category">Category</label>
@@ -61,7 +61,7 @@
           </div>
           <div class="button-group">
               <button>Submit</button>
-              <button>Clear</button>
+              <button class="clear">Clear</button>
           </div>
     </form>
     <table>
@@ -90,7 +90,26 @@
                 <td>Excellent description about HD 8 tablet</td>
                 <td></td>
                 <td><img src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/76875/DarkButton.png" width="90px" class="edit-button"></td>
-                <td><a href="#popup"><img src="https://www.pngarts.com/files/4/Delete-Button-Transparent-Image.png" width="60px" class="delete-button"></a></td>
+                <td>
+                    <div class="wrap">
+                        <a href="#popup" class="delete-button"><img src="https://www.pngarts.com/files/4/Delete-Button-Transparent-Image.png" width="60px"></a>
+                    </div>
+                    <div class="modal" id="popup" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-header">
+                                <h2>WARNING</h2>
+                                <a href="#close" class="btn-close" aria-hidden="true">×</a>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure want to delete this product?</p>
+                            </div>
+                            <div class="modal-footer">
+                            <a href="#close" class="btn">Yes</a>
+                            <a href="#" class="btn">No</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>2</td>
@@ -101,7 +120,26 @@
                 <td>Excellent description about HD 10 tablet</td>
                 <td></td>
                 <td><img src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/76875/DarkButton.png" width="90px" class="edit-button"></td>
-                <td><a href="#popup"><img src="https://www.pngarts.com/files/4/Delete-Button-Transparent-Image.png" width="60px" class="delete-button"></a></td>
+                <td>
+                    <div class="wrap">
+                        <a href="#popup" class="delete-button"><img src="https://www.pngarts.com/files/4/Delete-Button-Transparent-Image.png" width="60px"></a>
+                    </div>
+                    <div class="modal" id="popup" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-header">
+                                <h2>WARNING</h2>
+                                <a href="#close" class="btn-close" aria-hidden="true">×</a>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure want to delete this product?</p>
+                            </div>
+                            <div class="modal-footer">
+                            <a href="#close" class="btn">Yes</a>
+                            <a href="#" class="btn">No</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>3</td>
@@ -112,7 +150,26 @@
                 <td>Excellent description about Apple iPad</td>
                 <td>✔</td>
                 <td><img src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/76875/DarkButton.png" width="90px" class="edit-button"></td>
-                <td><a href="#popup"><img src="https://www.pngarts.com/files/4/Delete-Button-Transparent-Image.png" width="60px" class="delete-button"></a></td>
+                <td>
+                    <div class="wrap">
+                        <a href="#popup" class="delete-button"><img src="https://www.pngarts.com/files/4/Delete-Button-Transparent-Image.png" width="60px"></a>
+                    </div>
+                    <div class="modal" id="popup" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-header">
+                                <h2>WARNING</h2>
+                                <a href="#close" class="btn-close" aria-hidden="true">×</a>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure want to delete this product?</p>
+                            </div>
+                            <div class="modal-footer">
+                            <a href="#close" class="btn">Yes</a>
+                            <a href="#" class="btn">No</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>4</td>
@@ -123,7 +180,26 @@
                 <td>Excellent description about Apple iPad mini</td>
                 <td>✔</td>
                 <td><img src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/76875/DarkButton.png" width="90px" class="edit-button"></td>
-                <td><a href="#popup"><img src="https://www.pngarts.com/files/4/Delete-Button-Transparent-Image.png" width="60px" class="delete-button"></a></td>
+                <td>
+                    <div class="wrap">
+                        <a href="#popup" class="delete-button"><img src="https://www.pngarts.com/files/4/Delete-Button-Transparent-Image.png" width="60px"></a>
+                    </div>
+                    <div class="modal" id="popup" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-header">
+                                <h2>WARNING</h2>
+                                <a href="#close" class="btn-close" aria-hidden="true">×</a>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure want to delete this product?</p>
+                            </div>
+                            <div class="modal-footer">
+                            <a href="#close" class="btn">Yes</a>
+                            <a href="#" class="btn">No</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>5</td>
@@ -134,17 +210,28 @@
                 <td>Excellent description about Apple iPad Air</td>
                 <td>✔</td>
                 <td><img src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/76875/DarkButton.png" width="90px" class="edit-button"></td>
-                <td><a href="#popup"><img src="https://www.pngarts.com/files/4/Delete-Button-Transparent-Image.png" class="delete-button" width="60px"></a></td>
+                <td>
+                    <div class="wrap">
+                        <a href="#popup" class="delete-button"><img src="https://www.pngarts.com/files/4/Delete-Button-Transparent-Image.png" width="60px"></a>
+                    </div>
+                    <div class="modal" id="popup" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-header">
+                                <h2>WARNING</h2>
+                                <a href="#close" class="btn-close" aria-hidden="true">×</a>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure want to delete this product?</p>
+                            </div>
+                            <div class="modal-footer">
+                            <a href="#close" class="btn">Yes</a>
+                            <a href="#" class="btn">No</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
             </tr>
         </tbody>
     </table>
-    <div id="popup">
-        <div id="box">
-            <span class="close">&times;</span>
-            Are sure want to delete this product? <br>
-            <button id="Yes">Yes</button>
-            <button id="No">No</button>
-        </div>
-    </div>
 </body>
 </html>

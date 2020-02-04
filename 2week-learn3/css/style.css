@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Helvetica, arial;
+}
+
 .logo:link, .logo:visited {
     padding: 0px 200px;
     display: block;
@@ -11,14 +15,14 @@
 .option:link, .option:visited {
     padding: 12px;
     font-size: 18px;
-    color: black;
+    color: #1c0441;
     text-decoration: none;
     display: block;
 }
 
 .option:hover {
     text-decoration: underline;
-    background-color: pink;
+    background-color: rgb(235, 206, 235);
 }
 
 .nav-wrapper {
@@ -27,10 +31,10 @@
     justify-content: space-between;
     width: 100%;
     padding: 5px 0px 0px 0px;
-    background: thistle;
+    background: plum;
     font-size: 24px;
     font-family: sans-serif;
-    color: black;
+    color: #1c0441;
 }
 
 .menu {
@@ -48,7 +52,7 @@
 .menu:hover ul{
     display: flex;
     flex-direction: column;
-    background: plum;
+    background: rgb(238, 189, 238);
     padding: 0;
     margin: 0;
     position: absolute;
@@ -66,48 +70,199 @@ li {
 }
 
 .registration-form {
+    display: inline-block;
+    position: absolute;
     background-color: lightgray;
     border: 1px solid lightslategray;
     width: 20%;
     padding: 50px;
-    margin: 0 0 40px 0;
+    margin-top: 53px;
 }
 
-#popup {
-    z-index: 1;
-    background: rgba(102, 102, 102, 0.5);
+input[type=text],
+input[type=number],
+select {
     width: 100%;
-    height: 100%;
+    padding: 5px;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+}
+
+input[type=checkbox] {
+    margin-top: 5px;
+}
+
+.button-group > button {
+    border-radius: 3px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-right: 3px;
+    text-align: center;
+    width: 70px;
+    padding: 5px;
+    position: relative;
+}
+
+.button-group > button:hover {
+    background: rgba(102, 102, 102, 0.5);
+    cursor: pointer;
+}
+
+table {
     position: absolute;
+    border-collapse: collapse;
+    border-radius: 3px;
+    width: 70%;
+    margin-left: 350px;
+    margin-top: 190px;
+}
+
+table, th, td {
+    border: 1px solid grey;
+}
+
+
+th, td {
+    padding: 15px;
+}
+
+th {
+    background-color: rgb(235, 206, 235);
+    color:#1c0441;
+}
+
+td {
+    text-align: center;
+    height: 50px;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.edit-button:hover {
+    cursor: pointer;
+}
+
+.modal:before {
+    content: "";
+    display: none;
+    background: rgba(102, 102, 102, 0.5);
+    position: fixed;
     top: 0;
     left: 0;
-    display: none;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
-#box {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    text-align: center;
-    position: absolute;
-}
-
-#popup:target {
+.modal:target:before {
     display: block;
+} 
+
+.modal-dialog {
+    background: #fefefe;
+    border: 1px solid #888;
+    margin-left: -200px;
+    position: fixed;
+    left: 50%;
+    top: -100%;
+    z-index: 11;
+    width: 360px;
+    -webkit-transform: translate(0, -500%);
+    -ms-transform: translate(0, -500%);
+    transform: translate(0, -500%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
 }
 
-.close {
-    float: right;
-    color: #aaaaaa;
-    font-size: 28px;
-    font-weight: bold;
+.modal:target .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: 20%;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
+.wrap {
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-header,
+.modal-footer {
+    padding: 10px 20px;
+}
+
+.modal-header {
+    border-bottom: #eee solid 1px;
+}
+
+.modal-header h2 {
+    font-size: 20px;
+}
+
+.modal-footer {
+    border-top: #eee solid 1px;
+    text-align: center;
+}
+
+.btn {
+    background: rgb(238, 189, 238);
+    border: plum solid 1px;
+    border-radius: 3px;
+    color: #1c0441;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 8px 15px;
     text-decoration: none;
-    cursor: pointer;
+    text-align: center;
+    min-width: 60px;
+    position: relative;
+    transition: color .1s ease;
+}
+
+.btn:hover {
+    background: rgb(235, 206, 235);
+}
+
+.btn-close {
+    color: #aaa;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top:0;
+}
+
+.btn-close:hover {
+    color: #919191;
+}
+
+#close {
+    display: none;
 }
