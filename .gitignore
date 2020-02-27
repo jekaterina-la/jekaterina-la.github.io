@@ -1,4 +1,4 @@
-config.php
+index.php
 img/profile/*.png
 /2week-learn4/css/flex.css
 /2week-learn4/css/grid.css
@@ -6,3 +6,9 @@ img/profile/*.png
 /2week-learn4/grid.html
 /3week-learn1/index.html
 /3week-learn1/bootstrap.min.css
+/4week-learn1/index.css
+/4week-learn1/index.html
+/4week-learn1/index.js
+/5week-learn1/index1.php
+/5week-learn1/
+/5week-learn2/
